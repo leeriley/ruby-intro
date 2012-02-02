@@ -1,29 +1,20 @@
-class Ruby_Intro
+class RubyIntro
 
-  def Ruby_Intro.today
-
+  def self.today
     Time.new
-
   end
   
-  def Ruby_Intro.range
-  
+  def self.range
     (1..1000).each {|x| puts x }
-  
   end
   
-  def Ruby_Intro.addition(x, y)
-  
+  def self.addition(x, y)
     x + y;
-  
   end
   
-  def Ruby_Intro.stringcheck(string, myword)
-  
-    string.include? myword_wrap
-    
+  def self.does_word_exist?(myword)
+    phrase = "The only reason people get lost in thought is because it's unfamiliar territory."
+    phrase.include? myword
   end
   
 end
-  
-    
